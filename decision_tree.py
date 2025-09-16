@@ -3,7 +3,7 @@
 # FILENAME: decision_tree.py
 # SPECIFICATION: reads csv and outputs a decision tree
 # FOR: CS 4210- Assignment #1
-# TIME SPENT: ~ 4-5 hours
+# TIME SPENT: ~ 5 hrs
 #-----------------------------------------------------------*/
 
 #IMPORTANT NOTE: DO NOT USE ANY ADVANCED PYTHON LIBRARY TO COMPLETE THIS CODE SUCH AS numpy OR pandas. You have to work here only with standard
@@ -56,5 +56,5 @@ clf = tree.DecisionTreeClassifier(criterion='entropy')
 clf = clf.fit(X, Y)
 
 #plotting the decision tree
-tree.plot_tree(clf, feature_names=['Age', 'Spectacle', 'Astigmatism', 'Tear'], class_names=['Yes','No'], filled=True, rounded=True)
+tree.plot_tree(clf, feature_names=['Age', 'Spectacle', 'Astigmatism', 'Tear'], class_names=['No','Yes'], filled=True, rounded=True)
 plt.show()
